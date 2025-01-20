@@ -193,7 +193,7 @@ export default function Home() {
                   <Checkbox
                     id="uppercase"
                     checked={includeUppercase}
-                    onCheckedChange={setIncludeUppercase}
+                    onCheckedChange={(checked) => setIncludeUppercase(!!checked)}
                   />
                   <label htmlFor="uppercase" className="text-sm">Uppercase</label>
                 </div>
@@ -201,7 +201,7 @@ export default function Home() {
                   <Checkbox
                     id="lowercase"
                     checked={includeLowercase}
-                    onCheckedChange={setIncludeLowercase}
+                    onCheckedChange={(checked) => setIncludeLowercase(!!checked)}
                   />
                   <label htmlFor="lowercase" className="text-sm">Lowercase</label>
                 </div>
@@ -209,7 +209,7 @@ export default function Home() {
                   <Checkbox
                     id="numbers"
                     checked={includeNumbers}
-                    onCheckedChange={setIncludeNumbers}
+                    onCheckedChange={(checked) => setIncludeNumbers(!!checked)}
                   />
                   <label htmlFor="numbers" className="text-sm">Numbers</label>
                 </div>
@@ -217,7 +217,7 @@ export default function Home() {
                   <Checkbox
                     id="symbols"
                     checked={includeSymbols}
-                    onCheckedChange={setIncludeSymbols}
+                    onCheckedChange={(checked) => setIncludeSymbols(!!checked)}
                   />
                   <label htmlFor="symbols" className="text-sm">Symbols</label>
                 </div>
